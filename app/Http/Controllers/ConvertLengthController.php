@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class ConvertLengthController extends Controller
 {
-    public function __invoke(Request $request, $value, $unit)
+    public function __invoke($value, $unit)
     {
         // Valida que el valor sea numérico
         if (!is_numeric($value)) {
